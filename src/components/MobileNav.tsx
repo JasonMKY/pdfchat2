@@ -34,7 +34,7 @@ const MobileNav = ({ isAuth }: { isAuth: boolean }) => {
                 <li>
                   <Link
                     href="/sign-up"
-                    className="flex w-full items-center font-semibold text-green-600"
+                    className="flex w-full cursor-pointer items-center font-semibold text-green-600"
                     onClick={() => closeonCurrent("/sign-up")}
                   >
                     Get Started <ArrowRight className="ml-2 h-5 w-5" />
@@ -44,7 +44,7 @@ const MobileNav = ({ isAuth }: { isAuth: boolean }) => {
                 <li>
                   <Link
                     href="/sign-in"
-                    className="flex w-full items-center font-semibold"
+                    className="flex w-full cursor-pointer items-center font-semibold"
                     onClick={() => closeonCurrent("/sign-in")}
                   >
                     Sign In
@@ -54,7 +54,7 @@ const MobileNav = ({ isAuth }: { isAuth: boolean }) => {
                 <li>
                   <Link
                     href="/pricing"
-                    className="flex w-full items-center font-semibold"
+                    className="flex w-full cursor-pointer items-center font-semibold"
                     onClick={() => closeonCurrent("/pricing")}
                   >
                     Pricing
@@ -66,7 +66,7 @@ const MobileNav = ({ isAuth }: { isAuth: boolean }) => {
                 <li>
                   <Link
                     href="/dashboard"
-                    className="flex w-full items-center font-semibold"
+                    className="flex w-full cursor-pointer items-center font-semibold"
                     onClick={() => closeonCurrent("/dashboard")}
                   >
                     Dashboard
@@ -76,7 +76,7 @@ const MobileNav = ({ isAuth }: { isAuth: boolean }) => {
                 <li>
                   <LogoutLink
                     // href="/sign-out"
-                    className="flex w-full items-center font-semibold"
+                    className="flex w-full cursor-pointer items-center font-semibold"
                   >
                     Sign Out
                   </LogoutLink>

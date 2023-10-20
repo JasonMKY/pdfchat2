@@ -20,6 +20,8 @@ const Dashboard = ({ subscriptionPlan }: DashboardPageProps) => {
 
   const utils = trpc.useContext();
 
+  console.log(subscriptionPlan);
+
   const { data: files, isLoading } = trpc.getUserFiles.useQuery();
 
   const { mutate: deleteFile } = trpc.deleteFile.useMutation({

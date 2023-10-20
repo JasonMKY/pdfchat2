@@ -44,7 +44,7 @@ const Message = forwardRef<HTMLDivElement, MessageProps>(
           <div
             className={cn("inline-block rounded-lg px-4 py-2", {
               "bg-blue-600 text-white": message.isUserMessage,
-              "bg-gray-200, text-gray-900": !message.isUserMessage,
+              "bg-gray-200 text-gray-900": !message.isUserMessage,
               "rounded-br-none":
                 !isNextMessageSamePerson && message.isUserMessage,
               "rounded-bl-none":

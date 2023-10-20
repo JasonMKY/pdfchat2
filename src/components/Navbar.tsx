@@ -9,6 +9,7 @@ import {
 } from "@kinde-oss/kinde-auth-nextjs/server";
 import { ArrowRight } from "lucide-react";
 import UserAccountNav from "./UserAccountNav";
+import MobileNav from "./MobileNav";
 
 const Navbar = ({}) => {
   const { getUser } = getKindeServerSession();
@@ -19,9 +20,10 @@ const Navbar = ({}) => {
       <MaxWidthWrapper>
         <div className="flex h-14 items-center justify-between border-b border-zinc-200">
           <Link href="/" className="z-40 flex font-semibold">
-            <span>Quill.</span>
+            <span>ChatDocu.</span>
           </Link>
-
+          <MobileNav isAuth={!!user} />{" "}
+          {/* double ! turns the value into a boolean */}
           <div className="hidden items-center space-x-4 sm:flex">
             {!user ? (
               <>

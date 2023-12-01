@@ -44,10 +44,10 @@ export function constructMetaData({
       title,
       description,
       images: [image],
-      creator: "@ManishS79882777",
+      creator: "#",
     },
     icons,
-    metadataBase: new URL("https://chatdocu.vercel.app/"),
+    metadataBase: new URL("https://pdfchat2-bice.vercel.app/"),
     themeColor: "#FFF",
     ...(noIndex && {
       robots: {
